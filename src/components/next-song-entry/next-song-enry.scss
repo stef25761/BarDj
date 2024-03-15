@@ -1,0 +1,26 @@
+.next-song-entry {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__vote-button {
+    &--isDisabled {
+      color: green;
+    }
+  }
+
+  &__song {
+    .song {
+      &__label {
+        font-size: medium;
+        font-weight: bold;
+        overflow-wrap: anywhere;
+      }
+
+      &__sub-label {
+        font-size: small;
+        color: gray;
+      }
+    }
+  }
+}

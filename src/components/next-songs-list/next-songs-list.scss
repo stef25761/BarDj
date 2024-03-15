@@ -1,0 +1,22 @@
+.next-songs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__list {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+
+
+    li {
+      padding: 10px 0;
+      border-bottom: lightgray solid 1px;
+    }
+
+  }
+
+  &__count {
+    color: gray;
+    font-size: small;
+  }
+}

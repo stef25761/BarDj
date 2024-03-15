@@ -1,0 +1,41 @@
+.search-field {
+  display: flex;
+  flex-direction: column;
+  gap: 86.5px;
+  align-items: flex-start;
+
+
+  &__button-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .button-wrapper__input {
+      vertical-align: middle;
+      border: lightgray solid;
+      padding: 1px;
+      border-radius: 5px;
+    }
+  }
+}
+
+
+.fade-enter {
+  opacity: 0;
+  transform: translateX(100%); // Startpunkt: Feld außerhalb des Sichtbereichs rechts
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0); // Endpunkt: Feld an seine endgültige Position (links)
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  transform: translateX(0); // Startpunkt: Feld an seiner aktuellen Position (links)
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(100%); // Endpunkt: Feld außerhalb des Sichtbereichs rechts
+  transition: opacity 300ms, transform 300ms;
+}

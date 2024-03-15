@@ -1,0 +1,41 @@
+.song-view {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border: lightgray solid;
+  padding: 1px;
+  border-radius: 5px;
+  width: 100%;
+
+  &--with-shadow {
+    box-shadow: 20px 20px 100px gray;
+  }
+
+  &__album-cover {
+
+    width: 100px;
+    height: 100px;
+  }
+
+  &__current-song {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 10px;
+
+    .current-song {
+      &__label {
+        font-size: large;
+        font-weight: bold;
+      }
+
+      &__sub-label {
+        font-size: medium;
+        color: gray;
+      }
+    }
+  }
+}
+
+
+
+
